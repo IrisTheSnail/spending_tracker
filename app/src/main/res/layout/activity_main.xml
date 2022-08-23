@@ -8,15 +8,16 @@
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/Theme.Spending_tracker.AppBarOverlay">
+        android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.Spending_tracker.PopupOverlay" />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:shadowColor="@color/black"
+                android:text="submit"
+                app:layout_constraintEnd_toEndOf="parent" />
+
 
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -25,44 +26,10 @@
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            tools:ignore="MissingConstraints"
-            tools:layout_editor_absoluteX="1dp"
-            tools:layout_editor_absoluteY="1dp">
 
-            <EditText
-                android:id="@+id/inputText1"
-                android:layout_width="200dp"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="name"
-                android:inputType="textPersonName"
-                android:text="" />
-
-            <EditText
-                android:layout_width="200dp"
-                android:layout_height="48dp"
-                android:layout_weight="1"
-                android:ems="10"
-                android:hint="price"
-                android:inputType="numberDecimal"
-                android:text="" />
-
-            <RadioButton
-                android:id="@+id/radioButton"
-                android:layout_width="51dp"
-                android:layout_height="51dp"
-                android:layout_margin="0dp"
-                android:layout_weight="1"
-
-                android:text="" />
+        <include layout="@layout/name_price"/>
 
 
-        </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>

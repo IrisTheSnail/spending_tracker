@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    tools:ignore="MissingConstraints"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp"
+    >
+
+    <EditText
+        android:id="@+id/inputText1"
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="name"
+        android:inputType="textPersonName"
+        android:text="" />
+
+    <EditText
+        android:layout_width="190dp"
+        android:layout_height="48dp"
+        android:layout_weight="1"
+        android:ems="10"
+        android:hint="price"
+        android:inputType="numberDecimal"
+        android:text="" />
+
+    <RadioButton
+        android:id="@+id/radioButton"
+        android:layout_width="51dp"
+        android:layout_height="51dp"
+        android:layout_margin="0dp"
+        android:layout_weight="1"
+        android:onClick="add_another"
+        android:text="" />
+
+</LinearLayout>
